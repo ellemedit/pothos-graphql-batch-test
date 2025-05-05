@@ -39,4 +39,4 @@ Query: select "d0"."content" as "content", "d0"."id" as "id" from "posts" as "d0
 Query: select "d0"."content" as "content", "d0"."id" as "id" from "posts" as "d0" where "d0"."id" in (?) -- params: [1]
 ```
 
-It seems to be N+1 query problem occurs when you fetch GraphQL batch request.
+It turns out pothos plugins don't solve N+1 query problem occurs when you fetch GraphQL batch request.
